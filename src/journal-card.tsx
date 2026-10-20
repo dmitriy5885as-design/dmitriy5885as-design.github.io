@@ -1,0 +1,3 @@
+import {ArrowUpRight,NotebookPen} from 'lucide-react';
+import {JournalVisual} from './journal-visuals';
+export default function JournalCard(){return <a href="/projects/electronic-journal" className="syscore-card journal-card"><div className="syscore-card-image"><JournalVisual/><span>ГРУППЫ / ПОСЕЩАЕМОСТЬ / ЗАНЯТИЯ</span></div><div className="syscore-card-copy"><div className="eyebrow"><NotebookPen size={15}/> ИНСТРУМЕНТ ПЕДАГОГА</div><h3>Электронный журнал</h3><p>Учёт посещаемости, темы занятий и выполненная работа в одном пространстве. Авторская разработка для повседневной работы в дополнительном образовании.</p><span className="syscore-card-cta">О журнале и его возможностях <ArrowUpRight size={20}/></span></div></a>}
