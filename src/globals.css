@@ -36,3 +36,12 @@ html[data-theme=dark] .chess-viewer-frame{background:radial-gradient(ellipse at 
 @media(max-width:700px){.chess-intro h1{font-size:43px}.chess-lead{font-size:16px}.chess-viewer-frame{height:420px}.viewer-tools{align-items:stretch;flex-direction:column}.viewer-hint{line-height:1.7}.viewer-buttons button{flex:1;justify-content:center}.chess-details{grid-template-columns:1fr;gap:30px}.chess-downloads{margin:0 16px 35px}.chess-download-links .button{width:100%}.chess-card .syscore-card-copy h3{font-size:38px}}
 
 .card-art.card-art-chess{display:block;background:#0b234b;overflow:hidden}.card-art.card-art-chess>svg{width:100%;height:100%;color:inherit;object-fit:cover;stroke-width:initial}
+
+.chess-model-preview{width:100%;height:100%;position:relative;background:radial-gradient(ellipse at 50% 35%,#edf5ff,#c2d8f1);isolation:isolate;pointer-events:none}
+.chess-model-preview model-viewer{display:block;width:100%;height:100%;pointer-events:none;--poster-color:transparent;--progress-bar-color:#176bd2}
+.chess-preview-loading{position:absolute;inset:0;display:grid;place-items:center;color:#365c85;font-size:12px}
+.chess-preview-label{position:absolute;bottom:10px;left:10px;right:10px;border-radius:4px;background:#f6faffde;color:#315b87;padding:7px 8px;text-align:center;font-size:8px;font-weight:700;letter-spacing:.08em;pointer-events:none}
+.card-art.card-art-chess{height:210px;background:#d7e6f7}
+html[data-theme=dark] .chess-model-preview{background:radial-gradient(ellipse at 50% 35%,#294565,#142740)}
+html[data-theme=dark] .chess-preview-label{background:#142a43df;color:#c3dfff}html[data-theme=dark] .chess-preview-loading{color:#c3dfff}
+@media(max-width:700px){.card-art.card-art-chess{height:250px}}
