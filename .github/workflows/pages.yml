@@ -22,7 +22,9 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - run: npm ci
+      - name: Install dependencies
+        timeout-minutes: 3
+        run: npm ci --ignore-scripts --no-audit --no-fund --prefer-offline --fetch-timeout=60000 --fetch-retries=1
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
