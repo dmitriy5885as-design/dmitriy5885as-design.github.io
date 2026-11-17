@@ -106,3 +106,39 @@ html[data-theme=dark] .projects{background-image:linear-gradient(var(--tech-grid
 html[data-theme=dark] .lesson-subnav{background:linear-gradient(135deg,#80b7ff0c,transparent 70%),#17283f}
 html[data-theme=dark] .lesson-program-button[aria-pressed=true]{background:#418df0;border-color:#418df0}
 @media(max-width:700px){.lesson-subnav{padding:15px;gap:12px}.lesson-subnav-options{grid-template-columns:1fr;gap:8px}.lesson-program-button{min-height:60px;padding:11px 13px}.lesson-subnav-heading{display:block}.lesson-subnav-heading>p{margin-top:7px}}
+
+/* Contact area and organizational footer */
+.contact-section{padding-top:46px;padding-bottom:64px}
+.contact-panel{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr);gap:42px;align-items:center;padding:34px 38px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(135deg,#5b8fc217,transparent 58%),var(--tech-surface);box-shadow:0 16px 45px #173d6b0b}
+.contact-copy .eyebrow{margin-bottom:15px}
+.contact-copy h2{font-size:38px}
+.contact-copy>p{margin-top:12px;max-width:350px;font-size:12px;line-height:1.8;color:var(--muted)}
+.contact-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.contact-method{display:flex;align-items:center;gap:12px;min-height:82px;padding:14px;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--ink)}
+.contact-method[href]:hover{border-color:var(--accent);transform:translateY(-2px)}
+.contact-icon{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;border-radius:8px;background:#176bd215;color:var(--accent)}
+.contact-method>span:nth-child(2){display:grid;gap:6px;min-width:0;flex:1}
+.contact-method small{font-size:8px;letter-spacing:.1em;color:var(--muted)}
+.contact-method b{overflow-wrap:anywhere;font-size:12px;font-weight:600}
+.contact-method-empty{border-style:dashed;color:var(--muted)}
+html[data-theme=dark] .contact-panel{background:linear-gradient(135deg,#80b7ff12,transparent 58%),#17283f;box-shadow:0 16px 45px #00000018}
+html[data-theme=dark] .contact-icon{background:#80b7ff1c}
+.site-footer{display:block;max-width:1344px;margin:auto;padding:38px 54px 95px;border-top:1px solid var(--line)}
+.footer-partners{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:0 0 28px}
+.footer-partners-heading{display:grid;gap:8px}
+.footer-partners-heading .eyebrow{font-size:8px}
+.footer-partners-heading>p{font-size:11px;color:var(--muted)}
+.footer-partner-list{display:flex;gap:12px}
+.footer-partner{display:flex;align-items:center;gap:12px;min-height:68px;padding:10px 14px;border:1px solid var(--line);border-radius:7px;background:var(--tech-surface);transition:border-color .18s,transform .18s}
+.footer-partner:hover{border-color:var(--accent);transform:translateY(-2px)}
+.footer-partner-mark{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:9px;color:#fff;background:#176bd2}
+.footer-partner-mark-kvant{background:linear-gradient(135deg,#2878cd,#1b4d87)}
+.footer-partner-mark-rcdo{border-radius:50%;background:#274d7c;font-size:10px;font-weight:800;letter-spacing:-.04em}
+.footer-partner-name{display:grid;gap:4px}
+.footer-partner-name b{font-size:10px;letter-spacing:.06em}
+.footer-partner-name small{font-size:9px;line-height:1.5;color:var(--muted)}
+.footer-partner>svg{flex:0 0 auto;color:var(--accent)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:22px;border-top:1px solid var(--line)}
+.footer-bottom>span,.footer-bottom>small{font-size:10px;color:var(--muted)}
+@media(max-width:900px){.contact-panel{grid-template-columns:1fr;gap:24px}.footer-partners{align-items:flex-start;flex-direction:column}.footer-partner-list{width:100%}.footer-partner{flex:1}}
+@media(max-width:700px){.contact-section{padding:34px 20px 45px}.contact-panel{padding:22px 18px;gap:20px}.contact-copy h2{font-size:34px}.contact-methods{grid-template-columns:1fr}.contact-method{min-height:72px}.site-footer{padding:28px 20px 90px}.footer-partner-list{flex-direction:column}.footer-partner{width:100%;min-height:64px}.footer-bottom{align-items:flex-start;flex-direction:column;gap:14px}.footer-bottom .brand{margin-bottom:2px}}
