@@ -89,3 +89,20 @@ footer{background:var(--tech-surface);border-top:1px solid var(--tech-major)}
 
 html[data-theme=dark] body{background-image:linear-gradient(var(--tech-major) 1px,transparent 1px),linear-gradient(90deg,var(--tech-major) 1px,transparent 1px),linear-gradient(var(--tech-grid) 1px,transparent 1px),linear-gradient(90deg,var(--tech-grid) 1px,transparent 1px);background-size:160px 160px,160px 160px,32px 32px,32px 32px}
 html[data-theme=dark] .projects{background-image:linear-gradient(var(--tech-grid) 1px,transparent 1px),linear-gradient(90deg,var(--tech-grid) 1px,transparent 1px);background-size:32px 32px}
+
+/* Program submenus inside the lessons collection */
+.lesson-subnav{display:grid;grid-template-columns:1fr;gap:14px;margin:-7px 0 26px;padding:20px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:7px;background:linear-gradient(135deg,#ffffff66,transparent 70%),var(--tech-surface)}
+.lesson-subnav-heading{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.lesson-subnav-heading .eyebrow{margin:0}
+.lesson-subnav-heading>p,.lesson-subnav-note{font-size:11px;line-height:1.65;color:var(--muted)}
+.lesson-subnav-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.lesson-program-button{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:7px;min-height:75px;padding:13px 16px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);text-align:left;transition:background .18s,border-color .18s,transform .18s}
+.lesson-program-button:hover{border-color:var(--accent);transform:translateY(-2px)}
+.lesson-program-button>span{font-size:13px;font-weight:700}
+.lesson-program-button>small{font-size:10px;color:var(--muted)}
+.lesson-program-button[aria-pressed=true]{background:#176bd2;border-color:#176bd2;color:white}
+.lesson-program-button[aria-pressed=true]>small{color:#e7f1ff}
+.lesson-subnav-note{margin:0}
+html[data-theme=dark] .lesson-subnav{background:linear-gradient(135deg,#80b7ff0c,transparent 70%),#17283f}
+html[data-theme=dark] .lesson-program-button[aria-pressed=true]{background:#418df0;border-color:#418df0}
+@media(max-width:700px){.lesson-subnav{padding:15px;gap:12px}.lesson-subnav-options{grid-template-columns:1fr;gap:8px}.lesson-program-button{min-height:60px;padding:11px 13px}.lesson-subnav-heading{display:block}.lesson-subnav-heading>p{margin-top:7px}}
