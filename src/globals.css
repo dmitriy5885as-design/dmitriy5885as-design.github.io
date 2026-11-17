@@ -86,3 +86,6 @@ html[data-theme=dark] .profile-identity>span,html[data-theme=dark] .profile-iden
 .projects .section-heading>div,.projects .section-heading>p{background:var(--tech-surface);padding:8px 12px}
 footer{background:var(--tech-surface);border-top:1px solid var(--tech-major)}
 @media(max-width:700px){body{background-size:120px 120px,120px 120px,24px 24px,24px 24px}#root::before{background-size:720px 540px;opacity:.4}.profile-identity::after{width:250px;height:250px}.section-heading{padding-left:14px}.projects .section-heading>div,.projects .section-heading>p{padding:4px}.profile-story{padding-left:12px}}
+
+html[data-theme=dark] body{background-image:linear-gradient(var(--tech-major) 1px,transparent 1px),linear-gradient(90deg,var(--tech-major) 1px,transparent 1px),linear-gradient(var(--tech-grid) 1px,transparent 1px),linear-gradient(90deg,var(--tech-grid) 1px,transparent 1px);background-size:160px 160px,160px 160px,32px 32px,32px 32px}
+html[data-theme=dark] .projects{background-image:linear-gradient(var(--tech-grid) 1px,transparent 1px),linear-gradient(90deg,var(--tech-grid) 1px,transparent 1px);background-size:32px 32px}
