@@ -17,7 +17,9 @@ import './globals.css';
 type PublicData=typeof snapshot;
 const programDetails:Record<string,{file:string;cover:string;alt:string;caption:string}>={
  'program-format-3d-132':{file:'/lessons/programs/format-3d-132-hours.docx',cover:'/lessons/programs/format-3d-cover.png',alt:'Геометрические тела и 3D-печатная деталь на чертёжной сетке',caption:'Иллюстрация программы «Формат 3Д» — геометрия, моделирование и печать.'},
- 'program-3d-gfunction PublicPost({data}:{data:PublicData}){
+ 'program-3d-genius-132':{file:'/lessons/programs/3d-genius-132-hours.docx',cover:'/lessons/programs/3d-genius-cover.png',alt:'Путь от эскиза и CAD-модели к напечатанному прототипу робота',caption:'Иллюстрация программы «3Д-Гений» — путь от идеи к прототипу.'}
+};
+function PublicPost({data}:{data:PublicData}){
  const id=new URLSearchParams(location.search).get('id')||'';
  const post=data.posts.find((x:any)=>x.id===id) as any;
  const program=programDetails[id];
