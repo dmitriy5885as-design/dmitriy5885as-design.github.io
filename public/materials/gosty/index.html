@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>ГОСТы для чертежей и 3D-моделей</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07111f;--panel:#0d1a2b;--line:#20344c;--text:#eef5ff;--muted:#a7b8cc;--cyan:#63d6f5;--lime:#b6f26d}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#123052 0,transparent 40%),radial-gradient(ellipse at 90% 15%,#113c45 0,transparent 33%),var(--bg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text)}
+    a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
+    .wrap{max-width:1080px;margin:auto;padding:36px 20px 72px}
+    .back{display:inline-block;color:var(--muted);margin-bottom:26px}
+    .hero{border:1px solid var(--line);border-radius:24px;padding:clamp(24px,5vw,54px);background:linear-gradient(135deg,#10243aeb,#0b1927e8);position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #63d6f533;border-radius:50%;right:-72px;top:-90px;box-shadow:0 0 0 24px #63d6f50b,0 0 0 50px #63d6f508}
+    .eyebrow{color:var(--lime);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;max-width:750px;margin:10px 0 18px}
+    .hero p{max-width:760px;color:var(--muted);margin:8px 0}
+    .note{margin:24px 0 34px;padding:16px 18px;border-left:3px solid var(--lime);border-radius:0 12px 12px 0;background:#b6f26d0c;color:#d9e7f5}
+    h2{font-size:1.5rem;margin:38px 0 16px}
+    .group{margin-top:32px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:12px}
+    .item{padding:17px 18px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#0e1d30,#0a1726);min-height:130px}
+    .item h3{font-size:1rem;margin:0 0 7px}
+    .item p{color:var(--muted);font-size:.92rem;margin:0 0 12px}
+    .links{display:flex;gap:14px;flex-wrap:wrap;font-size:.88rem;font-weight:650}
+    .badge{display:inline-block;color:#ffd78b;background:#7d541b33;border:1px solid #b68b454d;padding:1px 8px;border-radius:99px;font-size:.74rem;margin-left:6px;vertical-align:2px}
+    .fine{font-size:.87rem;color:var(--muted);margin-top:28px}
+    footer{border-top:1px solid var(--line);margin-top:44px;padding-top:18px;color:var(--muted);font-size:.88rem}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back" href="/">← На сайт-портфолио</a>
+    <header class="hero">
+      <div class="eyebrow">Материалы · ЕСКД</div>
+      <h1>ГОСТы для чертежей и 3D-моделей</h1>
+      <p>Подборка стандартов, связанных с техническими чертежами, конструкторскими документами и электронными моделями. Они помогают правильно оформлять и передавать конструкцию: показывать виды, размеры, допуски и другие требования.</p>
+      <p>Сама геометрия детали определяется задачей и требованиями к изделию. Не каждый стандарт нужен для каждой модели: выбирайте документы по тому, что именно проектируете и оформляете.</p>
+    </header>
+
+    <div class="note"><strong>Как пользоваться:</strong> в папке собраны разные редакции. Нажмите на карточку Росстандарта, чтобы посмотреть название, статус, дату действия и сведения о замене. На сайте размещён каталог со ссылками на официальные карточки; сами PDF-файлы в сайт не копировались.</div>
+
+    <section class="group">
+      <h2>Электронные документы и модели</h2>
+      <div class="grid">
+        <article class="item"><h3>ГОСТ 2.051-2006 · Электронные документы</h3><p>Общие положения для электронных конструкторских документов.</p><div class="links"><a href="https://protect.gost.ru/gost/details/f729fb12-5c23-4e82-b007-1084e8f6eb34" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/47c5348f-2f97-4e51-bcd1-df8a35aaf858" target="_blank" rel="noopener">ГОСТ Р 2.051-2023</a></div></article>
+        <article class="item"><h3>ГОСТ 2.052-2006 · Электронная модель изделия</h3><p>Основные положения об электронной модели изделия.</p><div class="links"><a href="https://protect.gost.ru/gost/details/c6ee58b1-eb43-4419-8a06-1f741c7b5f65" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/d1341e2f-6174-45e0-b1c4-6a33649195f2" target="_blank" rel="noopener">ГОСТ Р 2.052-2024</a></div></article>
+        <article class="item"><h3>ГОСТ 2.053-2006 · Электронная структура изделия</h3><p>Как описывать состав и структуру изделия в электронном виде.</p><div class="links"><a href="https://protect.gost.ru/gost/details/38861920-ba6b-44d9-8430-6f428c2a36f7" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/d111b3a2-0c81-4e9a-99ba-a7989302acf7" target="_blank" rel="noopener">ГОСТ Р 2.053-2023</a></div></article>
+        <article class="item"><h3>ГОСТ Р 2.308-2023 · Геометрические допуски</h3><p>Правила указания допусков формы и расположения поверхностей.</p><div class="links"><a href="https://protect.gost.ru/gost/details/41ac4e79-c383-42de-bae3-88f76054b981" target="_blank" rel="noopener">Карточка Росстандарта</a></div></article>
+      </div>
+    </section>
+
+    <section class="group">
+      <h2>Изделия и комплект конструкторских документов</h2>
+      <div class="grid">
+        <article class="item"><h3>ГОСТ 2.101-68 · Виды изделий</h3><p>Классификация изделий при разработке конструкторской документации.</p><div class="links"><a href="https://protect.gost.ru/gost/details/62fe4d73-ba37-4889-85d8-81b434373201" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/c02efd82-1e32-43d2-8933-618a524390b8" target="_blank" rel="noopener">ГОСТ Р 2.101-2023</a></div></article>
+        <article class="item"><h3>ГОСТ 2.102-68 · Виды и комплектность документов</h3><p>Какие конструкторские документы применяются и как они комплектуются.</p><div class="links"><a href="https://protect.gost.ru/gost/details/c7a600da-0b8a-47b5-a157-7fd9021070ba" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/3742b2a6-b776-412e-95ed-2a2a4471cca4" target="_blank" rel="noopener">ГОСТ Р 2.102-2023</a></div></article>
+        <article class="item"><h3>ГОСТ 2.104-2006 · Основные надписи</h3><p>Основные надписи и дополнительные графы на конструкторских документах.</p><div class="links"><a href="https://protect.gost.ru/gost/details/53cdd9bb-5de1-4f45-a6e9-17cd681e4abd" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/69d422a2-3c0e-4561-a521-0c99f9cf4417" target="_blank" rel="noopener">ГОСТ Р 2.104-2023</a></div></article>
+        <article class="item"><h3>ГОСТ 2.105-95 · Текстовые документы</h3><p>Общие требования к текстовой части конструкторской документации.</p><div class="links"><a href="https://protect.gost.ru/gost/details/7178dbcf-2f6a-49d5-bfe0-0760086b1652" target="_blank" rel="noopener">Файл из папки · карточка</a></div></article>
+        <article class="item"><h3>ГОСТ 2.108-68 · Спецификация</h3><p>Стандарт для оформления спецификаций к конструкторским документам.</p><div class="links"><a href="https://protect.gost.ru/gost/details/0bfd345e-41e1-4167-a538-88bb9d026681" target="_blank" rel="noopener">Файл из папки · карточка</a></div></article>
+        <article class="item"><h3>ГОСТ Р 2.109-2023 · Требования к чертежам</h3><p>Основные требования к чертежам деталей, сборок, монтажа и общих видов.</p><div class="links"><a href="https://protect.gost.ru/gost/details/b88d9f1e-79f8-43ec-ba93-23fb5696d1bb" target="_blank" rel="noopener">Карточка Росстандарта</a></div></article>
+        <article class="item"><h3>ГОСТ 2.004-88 · Вывод документов с ЭВМ</h3><p>Требования к печати и графическому выводу конструкторской документации.</p><div class="links"><a href="https://protect.gost.ru/gost/details/a11d83eb-d7a6-4a04-8eef-4a077c39a137" target="_blank" rel="noopener">Файл из папки · карточка</a></div></article>
+      </div>
+    </section>
+
+    <section class="group">
+      <h2>Форматы, изображения и обозначения</h2>
+      <div class="grid">
+        <article class="item"><h3>ГОСТ 2.301-68 · Форматы</h3><p>Размеры и обозначения форматов чертёжных листов.</p><div class="links"><a href="https://protect.gost.ru/gost/details/aa681f87-ff49-4115-ad25-169e15d2af06" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/ca4c6e2d-fcde-4d46-b851-b0cbd10a7e53" target="_blank" rel="noopener">ГОСТ Р 2.301-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.302-68 · Масштабы</h3><p>Выбор и обозначение масштаба изображений на чертеже.</p><div class="links"><a href="https://protect.gost.ru/gost/details/b8e1f82a-8ad2-4133-8c49-2570711b7e22" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/c8a1ab70-2670-4e27-b74e-59b7c3f7e060" target="_blank" rel="noopener">ГОСТ Р 2.302-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.303-68 · Линии</h3><p>Типы линий и правила их применения в графических документах.</p><div class="links"><a href="https://protect.gost.ru/gost/details/09645eb7-ee23-467a-a319-25b3112a7227" target="_blank" rel="noopener">Файл из папки · карточка</a></div></article>
+        <article class="item"><h3>ГОСТ 2.304-68.pdf <span class="badge">проверьте имя</span></h3><p>Этот PDF оказался сборником ЕСКД, а не стандартом «ГОСТ 2.304-68». Шрифты чертёжные описаны в ГОСТ 2.304-81.</p><div class="links"><a href="https://protect.gost.ru/gost/details/2acb3258-c28c-4e4a-b7ac-208043f2d95e" target="_blank" rel="noopener">ГОСТ 2.304-81 · карточка</a><a href="https://protect.gost.ru/gost/details/f744cc7d-56c7-4930-98c0-afeedd135827" target="_blank" rel="noopener">ГОСТ Р 2.304-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.305-68 · Виды, разрезы, сечения</h3><p>Как показывать предмет на чертеже: виды, разрезы и сечения.</p><div class="links"><a href="https://protect.gost.ru/gost/details/7671068e-e6c5-4fcd-b910-4b60c6f40d85" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/cbeccb9a-67df-45fa-9c67-c391a43bbbc9" target="_blank" rel="noopener">ГОСТ 2.305-2008</a><a href="https://protect.gost.ru/gost/details/1922e193-7fd8-4e15-8e2b-93912a456452" target="_blank" rel="noopener">ГОСТ Р 2.305-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.306-68 · Материалы на разрезах</h3><p>Графические обозначения материалов в сечениях и на фасадах.</p><div class="links"><a href="https://protect.gost.ru/gost/details/150d6790-3ea9-4022-b6bc-3282b62f230d" target="_blank" rel="noopener">Файл из папки · карточка</a></div></article>
+        <article class="item"><h3>ГОСТ 2.307-68 · Размеры и отклонения</h3><p>Как указывать размеры и предельные отклонения.</p><div class="links"><a href="https://protect.gost.ru/gost/details/c968587b-db3f-4faf-8f59-797844652091" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/62de9da6-e1a7-4023-955e-7dd9777eaab6" target="_blank" rel="noopener">ГОСТ 2.307-2011</a><a href="https://protect.gost.ru/gost/details/eddb3107-58be-4811-b237-5ab1d0d4c4d5" target="_blank" rel="noopener">ГОСТ Р 2.307-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.309-73 · Шероховатость поверхностей</h3><p>Обозначения шероховатости и правила их нанесения на чертежах.</p><div class="links"><a href="https://protect.gost.ru/gost/details/757ee9f1-6974-4c87-b285-45b3719ca5e7" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/3f5698ca-65e9-410f-ab4c-db649ac28f0f" target="_blank" rel="noopener">ГОСТ Р 2.309-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.311-68 · Резьба</h3><p>Условное изображение резьбы и её обозначение на чертежах.</p><div class="links"><a href="https://protect.gost.ru/gost/details/75b396ab-4b3e-4305-a871-9809188c6bc4" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/b7c30962-8dcd-46b3-a5a5-b947d0f7f8bc" target="_blank" rel="noopener">ГОСТ Р 2.311-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.313-82 · Неразъёмные соединения</h3><p>Условные изображения и обозначения соединений на чертежах.</p><div class="links"><a href="https://protect.gost.ru/gost/details/90ad449d-56ba-4ace-8242-b221f16bc9bf" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/25659aca-69a2-40c1-9735-cdde81a569a8" target="_blank" rel="noopener">ГОСТ Р 2.313-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.315-68 · Крепёжные детали</h3><p>Упрощённые и условные изображения крепежа на чертежах.</p><div class="links"><a href="https://protect.gost.ru/gost/details/3b62896e-afd0-4f3a-8d7f-88dee62898ef" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/ba3f9358-de31-4f55-9075-b1f62d3d7031" target="_blank" rel="noopener">ГОСТ Р 2.315-2026</a></div></article>
+        <article class="item"><h3>ГОСТ 2.316-68 · Надписи и таблицы</h3><p>Правила размещения надписей, технических требований и таблиц.</p><div class="links"><a href="https://protect.gost.ru/gost/details/40574daf-2a7e-4429-9af3-337a646a2d8e" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/25054f20-f35a-45ff-8d1f-1c198c35ea06" target="_blank" rel="noopener">ГОСТ Р 2.316-2023</a></div></article>
+        <article class="item"><h3>ГОСТ 2.318-81 · Размеры отверстий</h3><p>Упрощённое указание размеров отверстий на чертежах.</p><div class="links"><a href="https://protect.gost.ru/gost/details/86bda19d-e06d-4b74-b175-5541c3c7515b" target="_blank" rel="noopener">Файл из папки · карточка</a><a href="https://protect.gost.ru/gost/details/2fd45ba4-cb18-4f30-86f6-fb4a65ad7895" target="_blank" rel="noopener">ГОСТ Р 2.318-2026</a></div></article>
+      </div>
+    </section>
+
+    <p class="fine">Ссылки ведут на официальный каталог Росстандарта. Проверяйте статус и дату введения стандарта на его карточке — часть документов в папке относится к прежним редакциям.</p>
+    <footer>Подборка к программе «3Д Гений: от идеи к прототипу» · Материалы для обучения техническому черчению и 3D-моделированию</footer>
+  </main>
+</body>
+</html>
