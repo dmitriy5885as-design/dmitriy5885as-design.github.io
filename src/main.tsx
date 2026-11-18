@@ -19,6 +19,8 @@ const programDetails:Record<string,{file:string;cover:string;alt:string;caption:
  'program-format-3d-132':{file:'/lessons/programs/format-3d-132-hours.docx',cover:'/lessons/programs/format-3d-cover.png',alt:'Геометрические тела и 3D-печатная деталь на чертёжной сетке',caption:'Иллюстрация программы «Формат 3Д» — геометрия, моделирование и печать.'},
  'program-3d-genius-132':{file:'/lessons/programs/3d-genius-132-hours.docx',cover:'/lessons/programs/3d-genius-cover.png',alt:'Путь от эскиза и CAD-модели к напечатанному прототипу робота',caption:'Иллюстрация программы «3Д-Гений» — путь от идеи к прототипу.'}
 };
+const path=location.pathname.replace(/\/+$/,'');
+const projects:Record<string,{Page:()=>React.ReactNode,metadata:{title:string}}>= {'/projects/chess':{Page:Chess,metadata:chessMetadata},'/projects/syscore':{Page:Syscore,metadata:syscoreMetadata},'/projects/svoya-igra':{Page:Game,metadata:gameMetadata},'/projects/electronic-journal':{Page:Journal,metadata:journalMetadata}};
 function PublicPost({data}:{data:PublicData}){
  const id=new URLSearchParams(location.search).get('id')||'';
  const post=data.posts.find((x:any)=>x.id===id) as any;
