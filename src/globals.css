@@ -142,3 +142,5 @@ html[data-theme=dark] .contact-icon{background:#80b7ff1c}
 .footer-bottom>span,.footer-bottom>small{font-size:10px;color:var(--muted)}
 @media(max-width:900px){.contact-panel{grid-template-columns:1fr;gap:24px}.footer-partners{align-items:flex-start;flex-direction:column}.footer-partner-list{width:100%}.footer-partner{flex:1}}
 @media(max-width:700px){.contact-section{padding:34px 20px 45px}.contact-panel{padding:22px 18px;gap:20px}.contact-copy h2{font-size:34px}.contact-methods{grid-template-columns:1fr}.contact-method{min-height:72px}.site-footer{padding:28px 20px 90px}.footer-partner-list{flex-direction:column}.footer-partner{width:100%;min-height:64px}.footer-bottom{align-items:flex-start;flex-direction:column;gap:14px}.footer-bottom .brand{margin-bottom:2px}}
+
+.card-art.card-art-gost{display:block;height:210px;background:#081526;overflow:hidden}.card-art.card-art-gost>img{display:block;width:100%;height:100%;object-fit:contain}@media(max-width:700px){.card-art.card-art-gost{height:250px}}
