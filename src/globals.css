@@ -144,3 +144,16 @@ html[data-theme=dark] .contact-icon{background:#80b7ff1c}
 @media(max-width:700px){.contact-section{padding:34px 20px 45px}.contact-panel{padding:22px 18px;gap:20px}.contact-copy h2{font-size:34px}.contact-methods{grid-template-columns:1fr}.contact-method{min-height:72px}.site-footer{padding:28px 20px 90px}.footer-partner-list{flex-direction:column}.footer-partner{width:100%;min-height:64px}.footer-bottom{align-items:flex-start;flex-direction:column;gap:14px}.footer-bottom .brand{margin-bottom:2px}}
 
 .card-art.card-art-gost{display:block;height:210px;background:#081526;overflow:hidden}.card-art.card-art-gost>img{display:block;width:100%;height:100%;object-fit:contain}@media(max-width:700px){.card-art.card-art-gost{height:250px}}
+
+
+/* In-page DOCX program reader */
+.program-reader{margin:34px 0 28px;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--paper)}
+.program-reader-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;padding:20px 22px;border-bottom:1px solid var(--line);background:var(--tech-surface)}
+.program-reader-heading .eyebrow{margin-bottom:10px}
+.program-reader-heading h2{font-size:26px;line-height:1.2}
+.program-reader-heading>p{max-width:360px;font-size:11px;line-height:1.7;color:var(--muted)}
+.program-reader-status{padding:10px 18px;font-size:11px;line-height:1.6;color:var(--muted);border-bottom:1px solid var(--line)}
+.program-docx-viewer{max-height:min(82vh,1100px);overflow:auto;background:#dce3eb}
+.program-docx-viewer .docx-wrapper{padding:20px 12px!important;background:#dce3eb!important}
+.program-docx-viewer .docx{margin:0 auto 20px!important;max-width:100%;box-shadow:0 12px 36px #1022382b}
+@media(max-width:700px){.program-reader-heading{align-items:flex-start;flex-direction:column;padding:17px}.program-reader-heading h2{font-size:22px}.program-docx-viewer .docx-wrapper{padding:10px 5px!important}}
